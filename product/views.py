@@ -11,3 +11,6 @@ def home(request):
         titles.append(str(obj.tital))
         new = ",".join(titles)
     return HttpResponse(new)
+
+
+     

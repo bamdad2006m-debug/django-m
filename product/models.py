@@ -6,4 +6,6 @@ class task(models.Model):
     category = models.CharField(max_length=70)
     des = models.TextField()
     date = models.DateField()
-    
+    student = models.ForeignKey(student,on_delete=models.CASCADE,related_name="task")
+    def __st__(self):
+        return self.title
